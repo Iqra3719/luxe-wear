@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fabric-weave {
+  background-image: repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.06) 0 2px,
+      transparent 2px 14px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, 0.05) 0 2px,
+      transparent 2px 14px
+    );
+}
+
+.swatch-women {
+  background: linear-gradient(160deg, #7a5c46 0%, #b98b5e 45%, #e7c9a0 100%);
+}
+.swatch-men {
+  background: linear-gradient(160deg, #232019 0%, #3e362c 55%, #5c4e3b 100%);
+}
+.swatch-bed {
+  background: linear-gradient(160deg, #d9c6a4 0%, #c9a668 55%, #8c6a3e 100%);
+}
+
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c9a668, transparent);
+}
+
+::selection {
+  background: #c9a668;
+  color: #211d19;
+}
